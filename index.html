@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- facebook open graph -->
+  <!-- <meta property="og:url" content="">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:image" content=""> -->
+  <!-- twitter card tags -->
+  <!-- <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@nytimesbits">
+  <meta name="twitter:creator" content="@nickbilton" /> -->
+  <!-- google font -->
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="assets/images/favicon.ico" rel="icon">
+  <!-- <link href="assets/images/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <!-- <link rel="apple-touch-icon" href="assets/images/favicon.png" sizes="180x180"> -->
+  <!-- <link rel="icon" href="assets/images/favicon.png" sizes="32x32" type="image/png"> -->
+  <!-- <link rel="icon" href="assets/images/favicon.png" sizes="16x16" type="image/png"> -->
+  <!-- <link rel="manifest" href="/docs/5.1/assets/img/favicons/manifest.json"> -->
+
+  <!-- <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon.ico"> -->
+
+  <!-- <link rel="stylesheet" href="assets/vendors/css/bootstrap.min.css"> -->
+  <!-- <link rel="stylesheet" href="assets/vendors/css/bootstrap-grid.min.css">
+ <link rel="stylesheet" href="assets/vendors/css/bootstrap-reboot.min.css"> -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://use.typekit.net/pri7zai.css">
+  <link rel="stylesheet preconnect" type="text/css" href="assets/vendors/css/normalize.css">
+  <link rel="stylesheet preconnect" type="text/css" href="assets/vendors/css/owl.carousel.min.css">
+  <link rel="stylesheet preconnect" type="text/css" href="assets/vendors/css/owl.theme.default.min.css">
+  <link rel="stylesheet"  href="css/jquery-ui.css">
+  <link rel="stylesheet preconnect" type="text/css" href="css/style.min.css">
+  <!-- <script src="https://unpkg.com/vue@3.0.2"></script> -->
+  <!-- <script src="assets/vendors/js/vue.global.js"></script> -->
+  <title>
+   Kotak Cherry
+  </title>
+
+</head>
+
+<body>
+  <main class="main-wrapper" id="mainWrapper">
+  <!-- <div>
+    <div class="slidecontainer">
+      <input type="range" min="0" max="100" value="50" class="slider" id="myRange" >
+      <p>Value: <span >00</span></p>
+    </div>
+    
+    
+  </div> -->
+  <section class="banner-section">
+    <div class="container">
+      
+      <div class="di-flex">
+        <div class="lt-container">
+          <div class="">
+            <header>
+              <a href="#!">
+                <img class="logo" src="assets/images/logo.png" alt="">
+              </a>
+              <a href="#!" class="toggle_icon hide-bg">
+                <img class="lozad" data-src="assets/images/menu-icon.png" alt="">
+              </a>
+
+            </header>
+          
+            <div class="owl-carousel owl-theme banner-container" id="bannerSection">
+              <div class="item">
+                <div class="info-box">
+                  <p>Get more from</p>
+                  <h1>Mutual Funds</h1>
+                  <div class="text">Choose from secure Debt Funds, balanced hybrid funds or high-return Equity funds. Your strong investment portfolio is just the Cherry on top.</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="info-box">
+                  <p>Get more from</p>
+                  <h1>Stocks</h1>
+                  <div class="text">Invest in a combination of listed securities offering stocks by various listed IPOs. Owning shares of the growing companies is just the Cherry on top.</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="info-box">
+                  <p>Get more from</p>
+                  <h1>Bonds</h1>
+                  <div class="text">Offering consistent returns with security of investment through credited Bonds. The power to plan your cash-flow is just the Cherry on top.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rt-container">
+          <!-- <img class="lozad" data-src="assets/images/banner-bg.jpg" class="back-img" alt=""> -->
+          <div class="top-info-box">
+            <img data-src="assets/images/shilde.png" alt="" class="icon-img lozad">
+            <div class="text">Secured by <br>
+              Kotak Mahindra Bank</div>
+          </div>
+        </div>
+      </div>
+      
+     
+    </div>
+    <div class="container mobile-banner" >
+      <div class="form-position" id="formCotainer">
+        <div class="form-container form-wrapper">
+          <span class="form-title"> 
+            <!-- <span class="title"> -->
+              Smart investments begin here!
+          <!-- </span> -->
+          </span>
+          <form action="#!" class="form form-horizontal" id="bookAptOne">
+            <div class="col-input">
+              <div class="control">
+                <input type="text" class="form-control" name="fname" placeholder="Enter Full Name*" required>
+              </div>
+            </div>
+            <div class="col-input">
+              <div class="control">
+                <input type="tel" class="form-control" name="phoneNum" placeholder="Enter Mobile Number*" minlength="10" maxlength="10" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" required>
+              </div>
+            </div>
+            <div class="col-input">
+              <div class="control">
+                <input type="email" class="form-control" name="email" placeholder="Enter Email Address*" required>
+              </div>
+            </div>
+            
+            <button type="submit" onclick="event.preventDefault(); submitData(event, 'bookAptOne');" class="submit-btn effect-btn">Get Started</button>
+          </form>
+          <p class="form-waring">I authorise KIAL to contact me & this consent shall prevail over all “Do not call” registrations </p>
+        </div>
+
+      </div>
+      <div class="button-box hide-bg">
+        <div class="top-info-box">
+          <img data-src="assets/images/shilde.png" alt="" class="icon-img lozad">
+          <div class="text">Secured by <br>
+            Kotak Mahindra Bank</div>
+        </div>
+        <button class="submit-btn effect-btn form-toogle" id="toogleForm">Get Started</button>
+      </div>
+    </div>
+  </section>
+  <section class="ac" id="benefits">
+    <div class="container">
+      <h1><span>What's Different </span>  at Cherry</h1>
+      <div class="ponters">
+        <div class="points">
+            <img class="lozad" data-src="assets/images/diff/one.jpg" alt="">
+            <div class="content">
+              <p class="title">Investment Options</p>
+              <div class="subtitle">Choose from Mutual Funds, Stocks, <br>
+                NPS, Deposits or Bonds.</div>
+            </div>
+        </div>
+        <div class="points">
+          <img class="lozad" data-src="assets/images/diff/two.jpg" alt="">
+          <div class="content">
+            <p class="title">Paperless Transactions</p>
+            <div class="subtitle">A fully online journey with easy <br>
+              purchase & tracking</div>
+            </div>
+        </div>
+        <div class="points">
+          <img class="lozad" data-src="assets/images/diff/three.jpg" alt="">
+          <div class="content">
+            <p class="title">Commission Free</p>
+            <div class="subtitle">Get full value for your transactions, <br>
+              as returns. No extra charge.</div>
+            </div>
+        </div>
+        <div class="points">
+          <img class="lozad" data-src="assets/images/diff/four.jpg" alt="">
+          <div class="content">
+            <p class="title">Secure Interface</p>
+            <div class="subtitle">Manage safely & easily by linking <br>
+              your Kotak bank account.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="calculater-section" id="makeYour">
+    <div class="container">
+      <div class="di-flex">
+        <div class="cal-carousel">
+          <h1>Make your <br>
+            money matter</h1>
+          <div class="owl-carousel owl-theme calculater-carousel" id="calCarousel">
+            <div class="item">
+              <div class="cal-item">
+               
+                <div class="number">01</div>
+                <p class="text">One stop solution for all
+                  your investments</p>
+                <div class="fotter-text">Invest across mutual funds, stocks, gold, NPS,
+                  bonds, deposits and more with a few clicks </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="cal-item">
+             
+                <div class="number">02</div>
+                <p class="text">Affordable investments with high growth</p>
+                <div class="fotter-text">Invest easily for your desired returns. Premiums start as low as Rs.500, or custom set as per your wishes.</div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="cal-item">
+                
+                <div class="number">03</div>
+                <p class="text">Link account, invest & track</p>
+                <div class="fotter-text">Simplifying your investment journey by Kotak account linking for easy payments, tracking & returns.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="cal-box">
+        <div id="">
+          <div class="cal-main-box">
+            <h2>Move the scale to calculate</h2>
+
+            <div class="slidecontainer">
+              <div class="header"><div class="lable">SIP/Month</div> <div class="number"  >₹<span id="sipValue">50</span></div></div>
+              <input  type="range" min="0" max="100" class="slider" id="my-slider" value="50" oninput="slider()" >
+            </div>
+            <div class="slidecontainer">
+              <div class="header"><div class="lable">SIP Period</div> <div class="number" ><span id="sipPeriodValue">20</span> years</div></div>
+              <input  type="range" min="0" max="100" class="slider" id="sipPeriod" value="50" oninput="sliderSipPeriod()" >
+            </div>
+            <div class="slidecontainer">
+              <div class="header"><div class="lable">Returns on investment</div> <div class="number" ><span id="retunAmtValue">50</span> %</div></div>
+              <!-- <input type="range" min="0" max="100" class="slider" v-model="retunAmt" > -->
+              <input  type="range" min="0" max="100" class="slider" id="retunAmt" value="50" oninput="sliderretunAmt()" >
+            </div>
+          </div>
+
+          <div class="result-container">
+           <div class="rupp-box"><span class="repp">₹30</span>  <span class="info">lakhs extra earnings</span> </div> 
+           <!-- <a href=""></a> -->
+           <div> <button type="submit" onclick="event.preventDefault();" class="submit-btn effect-btn openPop mutiStepForm_open">Get Started</button></div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+  <section class="market-section" id="chooseFrom">
+    <div class="container">
+      <div class="market-container">
+        <div class="title">Today's <br>
+          top funds</div>
+        <div class="market nfty">
+          <div class="header">NSE - Nifty 50</div>
+          <div class="price">58,338.93</div>
+          <div class="trand">
+            <span class="tangle-down"></span>
+            <span class="today-point">237.44 </span>
+            <span class="today-point-per">-0.41%</span>
+          </div>
+        </div>
+        <div class="market nfty-50">
+          <div class="header">NSE - Nifty 50</div>
+          <div class="price">58,338.93</div>
+          <div class="trand">
+            <span class="tangle-down"></span>
+            <span class="today-point">237.44 </span>
+            <span class="today-point-per">-0.41%</span>
+          </div>
+        </div>
+        <div class="market sensex">
+          <div class="header">NSE - Nifty 50</div>
+          <div class="price">58,338.93</div>
+          <div class="trand">
+            <span class="tangle-up"></span>
+            <span class="today-point">237.44 </span>
+            <span class="today-point-per">-0.41%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="funds-section" id="popTheCherry">
+    <div class="container">
+      <div class="fund-container">
+        <div class="var-fund">
+          <div class="title">Choose from <br>
+            a variety of funds</div>
+          <p>Buy stocks of publicly traded companies.
+            As these companies grow, so does the value
+            of their stocks you own.</p>
+            <div>
+              <a onclick="event.preventDefault();" class="submit-btn get-start effect-btn  mutiStepForm_open">Get Started</a>
+            </div>
+        </div>
+        <div class="var-owl-box">
+          <div class="owl-carousel owl-theme our-services" id="ourServices">
+            <div class="item">
+              <div class="service-item">
+                <div class="media">
+                  <img cla src="assets/images/fu-one.png" alt="">
+                </div>
+                <div class="content">
+                  <div class="title">Exchange Traded Fund</div>
+                  <div class="text">Diversified funds that can be traded directly at stock exchange.</div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="service-item two">
+                <div class="media">
+                  <img class="lozad" data-src="assets/images/fu-two.png" alt="">
+                </div>
+                <div class="content">
+                  <div class="title">Initial Public Offering</div>
+                  <div class="text">Buy shares of the top-listed Fortune 500 brands of the future</div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="service-item three">
+                <div class="media">
+                  <img class="lozad" data-src="assets/images/fu-three.png" alt="">
+                </div>
+                <div class="content">
+                  <div class="title">Listed Bonds</div>
+                  <div class="text">Bonds offered on the stock exchange. Less riskier than other stock investments.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pop-container">
+        <h1>Pop the Cherry</h1>
+        <div class="text">Set return expectations to choose the best investment for you, regular income, <br>
+          monetary security, or long-term returns. </div>
+        <!-- <div class="pop-acc-flex"> -->
+        <div class="owl-carousel owl-theme acc-carousel" id="accCarousel">
+          <div class="item">
+            <div class="service-item">
+              <div class="title">Stock </div>
+              <div class="accordion-container">
+                <button class="accordion">Exchange Traded Fund</button>
+                <div class="panel">
+                  <p>Diversified funds that can be directly traded at the stock exchange. </p>
+                </div>
+                <button class="accordion">IPO</button>
+                <div class="panel">
+                  <p>Be the first to invest in top companies with quickly growing equity.</p>
+                </div>
+                <button class="accordion">Listed Bonds</button>
+                <div class="panel">
+                  <p>Bonds offered at the stock exchange, which are less risky. </p>
+                </div>
+                <button class="accordion">Future & Options</button>
+                <div class="panel">
+                  <p>Hedge your investments by trading in the derivative section.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="service-item">
+              <div class="title">Mutual Funds </div>
+              <div class="accordion-container">
+                <button class="accordion">SIP</button>
+                <div class="panel">
+                  <p>Plan systematically for steady returns.</p>
+                </div>
+                <button class="accordion">Tax Saving</button>
+                <div class="panel">
+                  <p>Bigger security with savings on Income Tax.</p>
+                </div>
+                <button class="accordion">Top Performing</button>
+                <div class="panel">
+                  <p>Top funds today, by popular demand.</p>
+                </div>
+                <button class="accordion">Gold</button>
+                <div class="panel">
+                  <p>Get higher returns by investing in gold-traded funds.</p>
+                </div>
+                <button class="accordion">International Funds</button>
+                <div class="panel">
+                  <p>Diversify your portfolio by investing in global funds. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="service-item">
+              <div class="title">Deposit </div>
+              <div class="accordion-container">
+                <button class="accordion">Fixed Deposit</button>
+                <div class="panel">
+                  <p>One-time investment for a fixed period that gives returns.</p>
+                </div>
+                <button class="accordion">Recurring Deposit</button>
+                <div class="panel">
+                  <p>Invest at regular intervals & fulfil short-term goals.</p>
+                </div>
+                <button class="accordion">Tax-Saving Deposit</button>
+                <div class="panel">
+                  <p>Earn guaranteed returns while saving on your income tax.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- </div> -->
+
+  </section>
+  <section class="trust-section" id="builtBy">
+    <!-- <div class="container"> -->
+      <div class="main-box">
+        <div class="title-section">
+          <img data-src="assets/images/kotak.png" alt="" class="logo lozad">
+          <div class="title">Built by the brand <br>
+            that India trusts</div>
+        </div>
+        <div class="awards-owl">
+          <div class="owl-carousel owl-theme our-awards" id="ourAwards">
+            <div class="item">
+              <div class="award">
+                <div class="year">2021</div>
+                <div class="aw-for">Best for Capital Markets <br>
+                  and Advisory</div>
+                <div class="org">Euromoney Private Banking and Wealth <br>
+                  Management Survey 2021</div>
+                <div class="campi">Awarded to Kotak Investment Advisors Limited</div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="award">
+                <div class="year">2020</div>
+                <div class="aw-for">Best for Investment Research<br>
+                  and Advisory</div>
+                <div class="org">Asiamoney Asia Private Banking Awards 2020</div>
+                <div class="campi">Awarded to Kotak Investment Advisors Limited</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <!-- </div> -->
+  </section>
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="faq-box">
+        <div class="title">Frequently asked questions</div>
+        <div class="accordion-container">
+          <button class="accordion"><span> What is Cherry?</span></button>
+          <div class="panel">
+            <p>Cherry is a <strong>one-stop platform</strong> for all your investments, built to help you invest like a pro! <br>
+              Invest <strong>safely and securely</strong> with Cherry which has grown out of the seed of simplicity, learning and transparency from the trusted house of Kotak.
+              </p>
+          </div>
+
+          <button class="accordion"><span>Who is eligible to get access to this platform?</span></button>
+          <div class="panel">
+            <p>For any resident or tax-paying individual, it's always a yes from Cherry. If you already have a trading account with Kotak Securities, that's just a cherry on top.</p>
+          </div>
+          <button class="accordion"><span>Is it mandatory to open a Kotak Bank Account?</span></button>
+          <div class="panel">
+            <p>Diversified funds that can be directly traded at the stock exchange. </p>
+          </div>
+          <button class="accordion"><span>Is Cherry secure?</span></button>
+          <div class="panel">
+            <p>Diversified funds that can be directly traded at the stock exchange. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="market-risk">
+    <div class="container">
+      Investment in securities market and Mutual Fund investments are subject to market risks. Read all the related documents carefully before investing. <br>
+For any grievance/complaints, please write to us at  <a href="mailto:say.hello@kotak.com" class="text-red">say.hello@kotak.com</a> <br>
+Regulatory Links - <a href="#!" target="_blank" rel="noopener noreferrer"> Privacy Policy </a> | <a href="#!" target="_blank" rel="noopener noreferrer"> Disclaimer </a> - The link for disclaimer will need to be updated with revised content 
+    </div>
+  </section>
+  <footer>
+    <div class="dwnld">
+      <div class="container">
+        <span>Download App</span>
+        <a href="https://apps.apple.com/us/app/kotak-cherry-wealth-advisory/id1541103838" target="_blank" rel="noopener noreferrer">
+        <img data-src="assets/images/app-store.png" class="app-img lozad" alt="App Store"></a>
+        <a href="https://play.google.com/store/apps/details?id=com.kotakcherry.app" target="_blank" rel="noopener noreferrer">
+        <img data-src="assets/images/google-play.png" class="app-img lozad" alt="Google Play">
+        </a>
+
+      </div>
+      
+    </div>
+    <div class="container btm-footer">      
+      <div class="col-33">
+      
+        <p>© Kotak Investment Advisors Ltd.</p>
+        <address>
+          CIN - U65990MH1994PLC077472 | All rights reserved<br>
+          SEBI Registered Non-Individual Investment Advisor<br>
+          (INA000012519) | Validity of registration: Perpetual
+        </address>
+      </div>
+      <div class="col-33">        
+          <p>Corporate Address:</p>
+          <address>
+            27 BKC, C 27, G Block, Bandra Kurla Complex,<br>
+            Bandra (E), Mumbai 400051, Telephone +91 22 43360701
+          </address>
+      </div>
+      <div class="col-33">        
+          <p>Securities and Exchange Board of India (SEBI)<br>
+            Regional address:</p>
+          <address>
+            SEBI Bhavan, Plot No. C4-A, 'G' Block, Bandra Kurla Complex,
+            Bandra (East), Mumbai - 400051
+          </address>
+        </address>
+      </div>
+    </div>
+    
+  </footer>
+  <a href="#!" class="sticky-btn-book-apt gotToForm effect-btn mutiStepForm_open">Get Started</a>
+</main>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vue@3.2.33/dist/vue.global.min.js"></script> -->
+  <!-- <button class="mutiStepForm_open">Click me! </button> -->
+  <section id="mutiStepForm">
+    <div class="mutit-step-form form-wrapper">
+      <ul class="owl-carousel owl-theme steps" id="stesOwl">
+        <li>
+          <a class="step step-1 active">
+            Personal Details
+          </a>
+        </li>
+        <li>
+          <a class="step step-2">
+            Verify Mobile No. & Email ID
+          </a>
+        </li>
+        <li>
+          <a class="step step-3">
+            Create An Account
+          </a>
+        </li>
+      </ul>
+      <form action="#!" class="step-form">
+        <fieldset class="form form-1 active">
+          <div class="form-title-pop"><button class="back-btn displayNone"> <img class="lozad" data-src="assets/images/back-arrow.png" alt=""> </button> <span>Personal details</span></div>
+          <div class="col-input">
+            <div class="control">
+              <input type="text" class="form-control" name="pen-card" id="panCard" placeholder="Enter Your PAN Card Number*" required>
+            </div>
+            <p class="invalid">Please enter the valid input.</p>
+          </div>
+          <div class="col-input">
+            <div class="control dataToggele date-control">
+              <input type="text" min="1950-01-01" max="2022-12-31" class="form-control date-type" required placeholder="Enter Date of Birth*">
+            </div>
+            <p class="invalid">Please enter the valid input.</p>
+            <!-- <p class="info">Enter Date of Birth*</p> -->
+          </div>
+          <div class="col-input">
+            <div class="control di-flex">
+              <label class="check-container">Please read the important terms & conditions mentioned,
+                before you click on 'Checkbox'. <br><br>
+                
+                I acknowledge to have understood and accepted all of the points
+                  <input type="checkbox" required>
+                  <span class="checkmark"></span>
+                </label>
+              <!-- <div class="check-box">
+                <input type="checkbox" class="form-control checkBoxCustom" id="vehicle1" name="vehicle1" value="Bike" required>
+                <span class="check-text"> </span>
+
+                <span class="checkmark"></span>
+                <label for="vehicle1" id="checkLab">Please read the important terms & conditions mentioned,
+                  before you click on 'Checkbox'.
+                  
+                  I acknowledge to have understood and accepted all of the points
+                  
+                  </label>
+              </div> -->
+            <p class="invalid">Please select.</p>
+
+            </div>
+
+          </div>
+          <a class="tAndC_open t-c">Read Terms and Conditions</a>
+        </fieldset>
+        <fieldset class="form form-2">
+          <!-- <div><button class="back-btn displayNone">back</button> <span> 2Lorem ipsum dolor sit amet.</span></div> -->
+          <div class="form-title-pop"><button class="back-btn displayNone"> <img class="lozad" data-src="assets/images/back-arrow.png" alt=""> </button> <span>Verify mobile number & email address</span></div>
+          <div class="col-input">
+            <div class="control">
+              <input type="password" class="form-control toggleInput" name="otp-mobile" id="otpMobile" placeholder="Enter OTP sent on Mobile*"
+                data-invalid="Please enter the valid input." required minlength="6" maxlength="6" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+              <a class="set-position-eye togglePassType"><img class="lozad" data-src="assets/images/eye-close.png" alt=""></a>
+            </div>
+            <p class="invalid" id="invalidMobile">Please enter the valid input.</p>
+            <p class="info">An OTP has been sent on <span id="mobileNumberValue"> 88888888888</span></p>
+
+          </div>
+          <div class="col-input">
+            <div class="control">
+              <input type="password" class="form-control toggleInput" name="otp-email" id="otpEmail" placeholder="Enter OTP sent on Email*" minlength="6" maxlength="6" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" required>
+              <a class="set-position-eye togglePassType"><img class="lozad" data-src="assets/images/eye-close.png" alt=""></a>
+            </div>
+            <p class="invalid" id="invalidEmail">Please enter the valid input.</p>
+            <p class="info">An OTP has been sent on nitin.c@logicserve.com</p>
+            
+          </div>
+
+            <!-- <div id="timer"></div> -->
+            <div class="otp-resend-box">
+              <p>Keep an eye on your spam folder for the OTP email</p>
+              <div class="button"> Did't receive OTP? <a href="#!" class="resend-otp">Resend OTP</a></div>
+            </div>
+        </fieldset>
+        <fieldset class="form form-3 ">
+          <div class="form-title-pop"><button class="back-btn displayNone"> <img class="lozad" data-src="assets/images/back-arrow.png" alt=""> </button> <span>Create an account</span></div>
+
+          <div class="col-input">
+            <div class="control">
+              <input type="password" class="form-control toggleInput validate" name="pass-one" id="passOne" placeholder="Enter Password" required>
+              <a class="set-position-eye togglePassType"><img class="lozad" data-src="assets/images/eye-close.png" alt=""></a>
+            </div>
+            <p class="invalid">Please enter the valid input.</p>
+          </div>
+          <div class="col-input">
+            <div class="control">
+              <input type="password" class="form-control toggleInput validate" name="pass-two" id="passTwo" placeholder="Retype Password" required>
+              <a class="set-position-eye togglePassType"><img class="lozad" data-src="assets/images/eye-close.png" alt=""></a>
+            </div>
+            <p class="invalid">Please enter the valid input.</p>
+          </div>
+          <!-- <p class="info">An OTP has been sent on nitin.c@logicserve.com</p> -->
+          <ul class="pass-valid">
+            <li class="password_length">At least 8 characters</li>
+            <li class="password_uppercase">A mixture of both uppercase and lowercase letters.</li>
+            <li class="password_number">A mixture of letters and numbers.</li>
+            <li class="special_char">Inclusion of at least one special character</li>
+            <li class="password_match">password and confirm password match.</li>
+          </ul>
+          <!-- <div class="passNotMach invalid password_match"></div> -->
+        </fieldset>
+        
+
+      </form>
+      <div class="bootom-container">
+        <div class="toogle-box">
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+          </label>
+          <div class="switch-title">Receive communication <br>
+            through WhatsApp</div>
+        </div>
+        <button class="submit-btn-multistep">Continue</button>
+      </div>
+    </div>
+
+
+
+  </section>
+  <section id="tAndC">
+    <!-- <h2>My popup 2</h2> -->
+    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
+    <div class="inner-content">
+    <div class="title">I agree to the following Terms & Conditions: as a pop Up</div>
+    <p>Kotak Cherry Platform shall through its Website/App provide execution & aggregation services for investment in Mutual Funds and distribution services for various other financial products. </p>
+
+    <ol>
+      <li>Kotak Cherry Platform shall also maintain a record of your information with respect to the services availed/intended to be availed by you through the Platform.
+        Kotak Cherry Platform, with your consent, can collect any related information with respect to the services availed/intended to be availed by you through the Platform from third party vendors and process it in order to display the updated information for you on the Platform at all times. <br> 
+        Kotak Cherry Platform makes best efforts to ensure that the information is correct and updated at all times. However, as the information is received from a third party,
+        Kotak Cherry Platform will not be responsible for any inadvertent error in the information displayed on the platform.</li>
+        <li>Kotak Cherry Platform uses Application Programming Interfaces and portals provided by third party service providers to facilitate transactions. Kotak Cherry Platform maintains the status of the transactions, account opening status, KYC, portfolio etc. based on the data provided by the third-party service providers and as per the regulations prescribed from time to time. <br> Kotak Cherry platform does NOT provide any advisory services to its clients, currently. However, it reserves the right to modify the service offerings in the future. <br>
+        The services/facility of Kotak Cherry Platform may be suspended or withdrawn at any time, and you acknowledge that the Kotak Cherry Account is also subject to interruption. <br>
+        You consent that the Kotak Cherry Platform shall have the right to withdraw the services offered at any time without providing any reason whatsoever and without giving any prior notice. </li>
+        <li>I agree to the following (Mandatory): <br>
+        I confirm that I am an Indian citizen and a tax resident of India and of no other country and I also do not have any political exposure. <br>
+        I also authorise Kotak to access my PAN & KYC information from KRAs (KYC registration agencies) and use the same information for my investment journey. As per regulatory requirement, I authorize you to use my KYC details (including PAN, Mobile no.) to fetch any negative observations. <br>
+        By clicking continue, I authorize to contact me. This will override the registry with DNC / NDNC.
+
+        </li>
+    </ol>
+    <p>I agree to the Privacy policy, Terms and the Disclaimer.</p>
+  </div>
+    <!-- <button class="popup1_open">Click me! </button> -->
+  </section>
+  <div id="thankYou">
+    <img data-src="assets/images/right.webp" class="thanks-img lozad" alt="">
+    <h2 class="title">Thank you</h2>
+   
+     <!-- <p class="phone-number">For any queries, reach out on our toll free number :  </p> -->
+  </div>
+  <div class="mobile-menu">
+    <header>
+      <a href="#!">
+        <img class="logo" src="assets/images/logo.png" alt="">
+      </a>
+      <a href="#!" class="toggle_icon">
+        <img class="lozad" data-src="assets/images/close.png" alt="">
+      </a>
+
+    </header>
+    <div class="munu-links">
+      <div>
+        <a href="#!" onclick="gotoSection('benefits')" class="link">Benefits</a>
+        <a href="#!" onclick="gotoSection('makeYour')" class="link">Make your money matter</a>
+        <a href="#!" onclick="gotoSection('chooseFrom')" class="link">Choose from a variety of funds</a>
+        <a href="#!" onclick="gotoSection('popTheCherry')" class="link">Pop the cherry</a>
+        <a href="#!" onclick="gotoSection('builtBy')" class="link">Built by the brand that India trusts</a>
+        <a href="#!" onclick="gotoSection('faq')" class="link">Frequently asked question</a>
+      </div>
+    </div>
+    <div class="mobile-footer">
+      <p>Download App</p>
+      <div class="mobile-footer-icons">
+        <a href="https://apps.apple.com/us/app/kotak-cherry-wealth-advisory/id1541103838" target="_blank" rel="noopener noreferrer">
+        <img data-src="assets/images/app-store.png" class="app-img lozad" alt="App Store"></a>
+        <a href="https://play.google.com/store/apps/details?id=com.kotakcherry.app" target="_blank" rel="noopener noreferrer">
+        <img data-src="assets/images/google-play.png" class="app-img lozad" alt="Google Play">
+        </a>
+      </div>
+    </div>
+  </div>
+  <a href="#!" class="chat show-bg"><img class="lozad" data-src="assets/images/bot.png" alt=""></a>
+  <script as="script" src="assets/vendors/js/jquery-3.6.0.min.js"></script>
+  <script as="script" src="assets/vendors/js/jquery.popupoverlay-min.js"></script>
+  <script  src="assets/vendors/js/jquery-ui.js"></script>
+  <script rel="prefetch" as="script" src="assets/vendors/js/owl.carousel.min.js"></script>
+  <script as="script"  src="assets/vendors/js/lozad.min.js"></script>
+  <script src="js/main.js"></script>
+  <script rel="preload" as="script" async src="js/multistep-form-validation.js"></script>
+  <script rel="preload" as="script" async src="js/form-validation.js"></script>
+
+  <!-- <script src="js/vue.js"></script> -->
+
+  <script>
+    if ($('#bannerSection').length) {
+      let bannerSection = $("#bannerSection").owlCarousel({
+        margin:10,
+        items: 1,
+        autoHeight:true,
+        autoplay:true,
+        loop:true,
+      })
+    }
+    if ($('#calCarousel').length) {
+      let bannerSection = $("#calCarousel").owlCarousel({
+        margin:10,
+        items: 1,
+        autoplay:true,
+        loop:true,
+        responsive: {
+          0: {
+            autoHeight:true,
+          },
+          992: {
+            autoWidth:false,
+          },
+        },
+      })
+    }
+    if($(window).width()<992 && $('#ourServices').length){
+      let infoCarousel = $("#ourServices").owlCarousel({
+        margin:0,
+        items: 1.2,
+        loop:true,
+        dots:false,
+      })
+    }
+
+    
+
+    if($(window).width()<992 && $('#stesOwl').length){
+      let infoCarousel = $("#stesOwl").owlCarousel({
+        margin:0,
+        // items: 1.1,
+        dots:false,
+        center:true,
+        responsive: {
+          0: {
+            items: 2,
+            autoHeight:true,
+            autoWidth:true,
+          },
+          992:{
+            items: 3,
+            autoWidth:false,
+          },
+        },
+      })
+    }
+    if ($('#accCarousel').length) {
+      let bannerSection = $("#accCarousel").owlCarousel({
+        margin:20,
+        items: 3,
+        dots:false,
+        responsive: {
+          0: {
+            items: 1.2,
+            // autoHeight:true,
+          },
+          992:{
+            items: 3,
+
+          },
+        },
+        // autoHeight:true,
+      })
+    }
+    // if($('#'))
+    if ($('#ourAwards').length) {
+      let bannerSection = $("#ourAwards").owlCarousel({
+        margin:20,
+        items: 1.2,
+        dots:false,
+        loop: true,
+        responsive: {
+          0: {
+            // items: 1.1,
+            autoHeight:true,
+            margin: 0,
+          },
+          992:{
+            // items: ,
+            margin:20,
+
+          },
+        },
+        // autoHeight:true,
+      })
+    }
+  </script>
+</body>
+
+</html>
