@@ -25,6 +25,7 @@ function submitData(e, formName){
   if(valid) {
     // console.log("form valid")
     $('#thankYou').popup('show');
+    $("#formCotainer").toggle();
   }
 }
 // $('#thankYou').popup('show');

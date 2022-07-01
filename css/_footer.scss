@@ -8,14 +8,22 @@ footer{ background: #000000;}
   .col-33 p, .col-33 address{color: #fff; font-family: "Roboto", Sans-serif; font-size: 12px; font-weight: normal; line-height: 20px; text-align: left; }
   .col-33 p { margin: 0;}
   .col-33 address { color: #7f7f7f;margin: 0; padding: 0; border: 0;vertical-align: baseline; font-style: normal;}
-
+  .col-33{
+    .download{
+      margin-bottom: 16px;
+    }
+    a{
+      display: inline-block;
+      margin-right: 8px;
+    }
+  } 
   @media only screen and (max-width:767px){
     .dwnld{ padding: 30px 0;  display: none;}
     .dwnld span{ display: block; margin-bottom: 20px; line-height: 1; margin-bottom: 20px;}
     .dwnld .app-img{ width: 150px; height: auto;}
     .btm-footer{ padding: 30px 15px;}
     .col-33{ width: 100%; margin-bottom: 20px;}
-    .col-33:last-child{ margin-bottom: 0;}
+    .col-33:last-child{ margin-bottom: 0; display: none;}
     .col-33 p, .col-33 address{ text-align: left;}
   }
 

@@ -39,7 +39,7 @@
   <link rel="stylesheet preconnect" type="text/css" href="assets/vendors/css/owl.carousel.min.css">
   <link rel="stylesheet preconnect" type="text/css" href="assets/vendors/css/owl.theme.default.min.css">
   <link rel="stylesheet"  href="css/jquery-ui.css">
-  <link rel="stylesheet preconnect" type="text/css" href="css/style.min.css">
+  <link rel="stylesheet preconnect" type="text/css" href="css/style.css">
   <!-- <script src="https://unpkg.com/vue@3.0.2"></script> -->
   <!-- <script src="assets/vendors/js/vue.global.js"></script> -->
   <title>
@@ -60,38 +60,42 @@
   </div> -->
   <section class="banner-section">
     <div class="container">
-      
+      <header>
+        <a href="#!">
+          <img class="logo" src="assets/images/logo.png" alt="">
+        </a>
+        <div class="top-info-box">
+          <img data-src="assets/images/shilde.png" alt="" class="icon-img lozad">
+          <div class="text">Secured by <br>
+            Kotak Mahindra Bank</div>
+        </div>
+        <a href="#!" class="toggle_icon hide-bg">
+          <img class="lozad" data-src="assets/images/menu-icon.png" alt="">
+        </a>
+
+      </header>
       <div class="di-flex">
         <div class="lt-container">
           <div class="">
-            <header>
-              <a href="#!">
-                <img class="logo" src="assets/images/logo.png" alt="">
-              </a>
-              <a href="#!" class="toggle_icon hide-bg">
-                <img class="lozad" data-src="assets/images/menu-icon.png" alt="">
-              </a>
-
-            </header>
+            
           
             <div class="owl-carousel owl-theme banner-container" id="bannerSection">
               <div class="item">
                 <div class="info-box">
-                  <p>Get more from</p>
-                  <h1>Mutual Funds</h1>
+                  <!-- <p>Get more from</p> -->
+                  <h1>One super-app for <br>
+                    all investments</h1>
                   <div class="text">Choose from secure Debt Funds, balanced hybrid funds or high-return Equity funds. Your strong investment portfolio is just the Cherry on top.</div>
                 </div>
               </div>
               <div class="item">
                 <div class="info-box">
-                  <p>Get more from</p>
                   <h1>Stocks</h1>
                   <div class="text">Invest in a combination of listed securities offering stocks by various listed IPOs. Owning shares of the growing companies is just the Cherry on top.</div>
                 </div>
               </div>
               <div class="item">
                 <div class="info-box">
-                  <p>Get more from</p>
                   <h1>Bonds</h1>
                   <div class="text">Offering consistent returns with security of investment through credited Bonds. The power to plan your cash-flow is just the Cherry on top.</div>
                 </div>
@@ -99,93 +103,102 @@
             </div>
           </div>
         </div>
-        <div class="rt-container">
+        <div class="md-container">
+          <img src="./assets/images/m.png" alt="">
+        </div>
+        <div class="rt-container" id="formCotainer">
           <!-- <img class="lozad" data-src="assets/images/banner-bg.jpg" class="back-img" alt=""> -->
-          <div class="top-info-box">
+          <!-- <div class="top-info-box">
             <img data-src="assets/images/shilde.png" alt="" class="icon-img lozad">
             <div class="text">Secured by <br>
               Kotak Mahindra Bank</div>
+          </div> -->
+          <div class="mobile-banner" >
+            <div class="form-position" >
+              <div class="form-container form-wrapper">
+                <span class="form-title"> 
+                  <!-- <span class="title"> -->
+                    Smart investments begin here!
+                <!-- </span> -->
+                </span>
+                <form action="#!" class="form form-horizontal" id="bookAptOne">
+                  <div class="col-input">
+                    <div class="control">
+                      <input type="text" class="form-control" name="fname" placeholder="Enter Full Name*" required>
+                    </div>
+                  </div>
+                  <div class="col-input">
+                    <div class="control">
+                      <input type="tel" class="form-control" name="phoneNum" placeholder="Enter Mobile Number*" minlength="10" maxlength="10" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" required>
+                    </div>
+                  </div>
+                  <div class="col-input">
+                    <div class="control">
+                      <input type="email" class="form-control" name="email" placeholder="Enter Email Address*" required>
+                    </div>
+                  </div>
+                  <p class="form-waring">I authorise KIAL to contact me & this consent shall prevail over all “Do not call” registrations </p>
+                  <button type="submit" onclick="event.preventDefault(); submitData(event, 'bookAptOne');" class="submit-btn effect-btn">Get Started</button>
+                </form>
+                
+              </div>
+      
+            </div>
+            <!-- <div class="button-box hide-bg"> -->
+              <!-- <div class="top-info-box">
+                <img data-src="assets/images/shilde.png" alt="" class="icon-img lozad">
+                <div class="text">Secured by <br>
+                  Kotak Mahindra Bank</div>
+              </div> -->
+              
+            <!-- </div> -->
           </div>
         </div>
+        <button class="submit-btn effect-btn form-toogle" id="toogleForm">Get Started</button>
+
       </div>
       
      
     </div>
-    <div class="container mobile-banner" >
-      <div class="form-position" id="formCotainer">
-        <div class="form-container form-wrapper">
-          <span class="form-title"> 
-            <!-- <span class="title"> -->
-              Smart investments begin here!
-          <!-- </span> -->
-          </span>
-          <form action="#!" class="form form-horizontal" id="bookAptOne">
-            <div class="col-input">
-              <div class="control">
-                <input type="text" class="form-control" name="fname" placeholder="Enter Full Name*" required>
-              </div>
-            </div>
-            <div class="col-input">
-              <div class="control">
-                <input type="tel" class="form-control" name="phoneNum" placeholder="Enter Mobile Number*" minlength="10" maxlength="10" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" required>
-              </div>
-            </div>
-            <div class="col-input">
-              <div class="control">
-                <input type="email" class="form-control" name="email" placeholder="Enter Email Address*" required>
-              </div>
-            </div>
-            
-            <button type="submit" onclick="event.preventDefault(); submitData(event, 'bookAptOne');" class="submit-btn effect-btn">Get Started</button>
-          </form>
-          <p class="form-waring">I authorise KIAL to contact me & this consent shall prevail over all “Do not call” registrations </p>
-        </div>
-
-      </div>
-      <div class="button-box hide-bg">
-        <div class="top-info-box">
-          <img data-src="assets/images/shilde.png" alt="" class="icon-img lozad">
-          <div class="text">Secured by <br>
-            Kotak Mahindra Bank</div>
-        </div>
-        <button class="submit-btn effect-btn form-toogle" id="toogleForm">Get Started</button>
-      </div>
-    </div>
+    
   </section>
   <section class="ac" id="benefits">
     <div class="container">
-      <h1><span>What's Different </span>  at Cherry</h1>
+      <h1><span>What differentiates </span> 
+        us  than others</h1>
       <div class="ponters">
         <div class="points">
-            <img class="lozad" data-src="assets/images/diff/one.jpg" alt="">
+            <img class="lozad" data-src="assets/images/diff/one-new.jpg" alt="">
             <div class="content">
-              <p class="title">Investment Options</p>
+              <p class="title">One-stop <br>
+                solution</p>
               <div class="subtitle">Choose from Mutual Funds, Stocks, <br>
                 NPS, Deposits or Bonds.</div>
             </div>
         </div>
         <div class="points">
-          <img class="lozad" data-src="assets/images/diff/two.jpg" alt="">
+          <img class="lozad" data-src="assets/images/diff/two-new.jpg" alt="">
           <div class="content">
-            <p class="title">Paperless Transactions</p>
+            <p class="title">Paperless <br> Transactions</p>
             <div class="subtitle">A fully online journey with easy <br>
               purchase & tracking</div>
             </div>
         </div>
         <div class="points">
-          <img class="lozad" data-src="assets/images/diff/three.jpg" alt="">
+          <img class="lozad" data-src="assets/images/diff/three-new.jpg" alt="">
           <div class="content">
-            <p class="title">Commission Free</p>
-            <div class="subtitle">Get full value for your transactions, <br>
-              as returns. No extra charge.</div>
+            <p class="title">Zero <br> commission MFs</p>
+            <div class="subtitle">Save cost of investing in MF with zero <br>
+              commission on Kotak Cherry</div>
             </div>
         </div>
         <div class="points">
-          <img class="lozad" data-src="assets/images/diff/four.jpg" alt="">
+          <img class="lozad" data-src="assets/images/diff/four-new.jpg" alt="">
           <div class="content">
-            <p class="title">Secure Interface</p>
-            <div class="subtitle">Manage safely & easily by linking <br>
-              your Kotak bank account.</div>
+            <p class="title">Secure <br>
+              Interface</p>
+            <div class="subtitle">Invest safely and securely with Cherry, <br>
+              from the trusted house of Kotak,</div>
           </div>
         </div>
       </div>
@@ -195,15 +208,12 @@
     <div class="container">
       <div class="di-flex">
         <div class="cal-carousel">
-          <h1>Make your <br>
-            money matter</h1>
+          <h1>How to start investing <br>
+            via Cherry?</h1>
           <div class="owl-carousel owl-theme calculater-carousel" id="calCarousel">
             <div class="item">
               <div class="cal-item">
-               
                 <div class="number">01</div>
-                <p class="text">One stop solution for all
-                  your investments</p>
                 <div class="fotter-text">Invest across mutual funds, stocks, gold, NPS,
                   bonds, deposits and more with a few clicks </div>
               </div>
@@ -212,22 +222,22 @@
               <div class="cal-item">
              
                 <div class="number">02</div>
-                <p class="text">Affordable investments with high growth</p>
                 <div class="fotter-text">Invest easily for your desired returns. Premiums start as low as Rs.500, or custom set as per your wishes.</div>
               </div>
             </div>
             <div class="item">
               <div class="cal-item">
-                
                 <div class="number">03</div>
-                <p class="text">Link account, invest & track</p>
                 <div class="fotter-text">Simplifying your investment journey by Kotak account linking for easy payments, tracking & returns.</div>
               </div>
             </div>
           </div>
         </div>
       <div class="cal-box">
-        <div id="">
+        <h2>Kotak Cherry : Investing simplified for new India</h2>
+
+        <iframe class="yt-video" src="https://www.youtube.com/embed/9xwazD5SyVg?rel=0&amp;controls=1&amp&amp;showinfo=0&amp;modestbranding=1" title="Dummy Video For YouTube API Test" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;  " allowfullscreen></iframe>
+        <!-- <div id="">
           <div class="cal-main-box">
             <h2>Move the scale to calculate</h2>
 
@@ -241,22 +251,38 @@
             </div>
             <div class="slidecontainer">
               <div class="header"><div class="lable">Returns on investment</div> <div class="number" ><span id="retunAmtValue">50</span> %</div></div>
-              <!-- <input type="range" min="0" max="100" class="slider" v-model="retunAmt" > -->
               <input  type="range" min="0" max="100" class="slider" id="retunAmt" value="50" oninput="sliderretunAmt()" >
             </div>
           </div>
 
           <div class="result-container">
            <div class="rupp-box"><span class="repp">₹30</span>  <span class="info">lakhs extra earnings</span> </div> 
-           <!-- <a href=""></a> -->
            <div> <button type="submit" onclick="event.preventDefault();" class="submit-btn effect-btn openPop mutiStepForm_open">Get Started</button></div>
           </div>
-        </div>
+        </div> -->
       </div>
       </div>
     </div>
   </section>
-  <section class="market-section" id="chooseFrom">
+  <section class="app-download">
+    <div class="container">
+      <div class="di-flex">
+        <div class="lt">
+          <h1>Download the App now!</h1>
+          <p>Download App for Android or IOS</p>
+          <div class="app-link">
+            <a href="https://apps.apple.com/us/app/kotak-cherry-wealth-advisory/id1541103838" target="_blank" rel="noopener noreferrer">
+              <img data-src="assets/images/app-store.png" class="app-img lozad" alt="App Store">
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.kotakcherry.app" target="_blank" rel="noopener noreferrer">
+             <img data-src="assets/images/google-play.png" class="app-img lozad" alt="Google Play">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- <section class="market-section" id="chooseFrom">
     <div class="container">
       <div class="market-container">
         <div class="title">Today's <br>
@@ -290,13 +316,13 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <section class="funds-section" id="popTheCherry">
     <div class="container">
       <div class="fund-container">
         <div class="var-fund">
-          <div class="title">Choose from <br>
-            a variety of funds</div>
+          <div class="title">Choose your <br>
+            equity investment</div>
           <p>Buy stocks of publicly traded companies.
             As these companies grow, so does the value
             of their stocks you own.</p>
@@ -340,18 +366,31 @@
               </div>
             </div>
           </div>
+        <button class="submit-btn effect-btn form-toogle">Get Started</button>
+
         </div>
       </div>
+      
+    </div>
+    <!-- </div> -->
+
+  </section>
+  <section class="pop-cherry-section" id="bitCherry">
+    <div class="container">
       <div class="pop-container">
-        <h1>Pop the Cherry</h1>
-        <div class="text">Set return expectations to choose the best investment for you, regular income, <br>
-          monetary security, or long-term returns. </div>
+        <h1>Take a bite of Cherry</h1>
+        <div class="text">New to investing? You've come to the right place. Cherry ensures <br>
+          seamless and easy investing.</div>
         <!-- <div class="pop-acc-flex"> -->
         <div class="owl-carousel owl-theme acc-carousel" id="accCarousel">
           <div class="item">
             <div class="service-item">
-              <div class="title">Stock </div>
+              <div class="title">Equity and Bonds </div>
               <div class="accordion-container">
+                <button class="accordion">Stocks</button>
+                <div class="panel">
+                  <p>Buy and sell listed Indian companies.</p>
+                </div>
                 <button class="accordion">Exchange Traded Fund</button>
                 <div class="panel">
                   <p>Diversified funds that can be directly traded at the stock exchange. </p>
@@ -420,16 +459,14 @@
         </div>
       </div>
     </div>
-    <!-- </div> -->
-
   </section>
+
   <section class="trust-section" id="builtBy">
-    <!-- <div class="container"> -->
+    <div class="container">
       <div class="main-box">
         <div class="title-section">
           <img data-src="assets/images/kotak.png" alt="" class="logo lozad">
-          <div class="title">Built by the brand <br>
-            that India trusts</div>
+          <div class="title">Built by the brand that India trusts</div>
         </div>
         <div class="awards-owl">
           <div class="owl-carousel owl-theme our-awards" id="ourAwards">
@@ -456,7 +493,7 @@
         </div>
       </div>
       
-    <!-- </div> -->
+    </div>
   </section>
   <section class="faq-section" id="faq">
     <div class="container">
@@ -494,7 +531,7 @@ Regulatory Links - <a href="#!" target="_blank" rel="noopener noreferrer"> Priva
     </div>
   </section>
   <footer>
-    <div class="dwnld">
+    <!-- <div class="dwnld">
       <div class="container">
         <span>Download App</span>
         <a href="https://apps.apple.com/us/app/kotak-cherry-wealth-advisory/id1541103838" target="_blank" rel="noopener noreferrer">
@@ -505,9 +542,16 @@ Regulatory Links - <a href="#!" target="_blank" rel="noopener noreferrer"> Priva
 
       </div>
       
-    </div>
-    <div class="container btm-footer">      
-      <div class="col-33">
+    </div> -->
+    <div class="container btm-footer">   
+      <div class="col-33">        
+        <p>Corporate Address:</p>
+        <address>
+          27 BKC, C 27, G Block, Bandra Kurla Complex,<br>
+          Bandra (E), Mumbai 400051, Telephone +91 22 43360701
+        </address>
+    </div>   
+      <!-- <div class="col-33">
       
         <p>© Kotak Investment Advisors Ltd.</p>
         <address>
@@ -515,22 +559,25 @@ Regulatory Links - <a href="#!" target="_blank" rel="noopener noreferrer"> Priva
           SEBI Registered Non-Individual Investment Advisor<br>
           (INA000012519) | Validity of registration: Perpetual
         </address>
-      </div>
-      <div class="col-33">        
-          <p>Corporate Address:</p>
-          <address>
-            27 BKC, C 27, G Block, Bandra Kurla Complex,<br>
-            Bandra (E), Mumbai 400051, Telephone +91 22 43360701
-          </address>
-      </div>
+      </div> -->
+      
       <div class="col-33">        
           <p>Securities and Exchange Board of India (SEBI)<br>
             Regional address:</p>
           <address>
-            SEBI Bhavan, Plot No. C4-A, 'G' Block, Bandra Kurla Complex,
+            SEBI Bhavan, Plot No. C4-A, 'G' Block, <br> Bandra Kurla Complex,
             Bandra (East), Mumbai - 400051
           </address>
         </address>
+      </div>
+      <div class="col-33">
+        <p class="download">Download App</p>
+        <a href="https://apps.apple.com/us/app/kotak-cherry-wealth-advisory/id1541103838" target="_blank" rel="noopener noreferrer">
+        <img data-src="assets/images/app-store.png" class="app-img lozad" alt="App Store"></a>
+        <a href="https://play.google.com/store/apps/details?id=com.kotakcherry.app" target="_blank" rel="noopener noreferrer">
+        <img data-src="assets/images/google-play.png" class="app-img lozad" alt="Google Play">
+        </a>
+
       </div>
     </div>
     
@@ -569,8 +616,11 @@ Regulatory Links - <a href="#!" target="_blank" rel="noopener noreferrer"> Priva
             <p class="invalid">Please enter the valid input.</p>
           </div>
           <div class="col-input">
+            <!-- <label for="dateInput" class="lable-date-input">Enter Date of Birth*</label> -->
+
             <div class="control dataToggele date-control">
-              <input type="text" min="1950-01-01" max="2022-12-31" class="form-control date-type" required placeholder="Enter Date of Birth*">
+              <input type="text" min="1950-01-01" max="2022-12-31" class="form-control date-type" required placeholder="Enter Date of Birth*" id="dateInput">
+              <img src="./assets/images/date-icon.png" class="position-date ui-datepicker-trigger" alt="">
             </div>
             <p class="invalid">Please enter the valid input.</p>
             <!-- <p class="info">Enter Date of Birth*</p> -->
@@ -628,7 +678,7 @@ Regulatory Links - <a href="#!" target="_blank" rel="noopener noreferrer"> Priva
 
             <!-- <div id="timer"></div> -->
             <div class="otp-resend-box">
-              <p>Keep an eye on your spam folder for the OTP email</p>
+              <p>Keep an eye on your spam/thrash folder for the OTP email</p>
               <div class="button"> Did't receive OTP? <a href="#!" class="resend-otp">Resend OTP</a></div>
             </div>
         </fieldset>
@@ -649,7 +699,7 @@ Regulatory Links - <a href="#!" target="_blank" rel="noopener noreferrer"> Priva
             </div>
             <p class="invalid">Please enter the valid input.</p>
           </div>
-          <!-- <p class="info">An OTP has been sent on nitin.c@logicserve.com</p> -->
+          <p class="pass-samp">Password Sample : CherryByKotak#321</p>
           <ul class="pass-valid">
             <li class="password_length">At least 8 characters</li>
             <li class="password_uppercase">A mixture of both uppercase and lowercase letters.</li>
@@ -722,10 +772,11 @@ Regulatory Links - <a href="#!" target="_blank" rel="noopener noreferrer"> Priva
     </header>
     <div class="munu-links">
       <div>
-        <a href="#!" onclick="gotoSection('benefits')" class="link">Benefits</a>
-        <a href="#!" onclick="gotoSection('makeYour')" class="link">Make your money matter</a>
-        <a href="#!" onclick="gotoSection('chooseFrom')" class="link">Choose from a variety of funds</a>
-        <a href="#!" onclick="gotoSection('popTheCherry')" class="link">Pop the cherry</a>
+        <a href="#!" onclick="gotoSection('benefits')" class="link">What differentiates us than others</a>
+        <a href="#!" onclick="gotoSection('makeYour')" class="link">Think money, think Cherry</a>
+        <a href="#!" onclick="gotoSection('chooseFrom')" class="link">Today's top funds</a>
+        <a href="#!" onclick="gotoSection('popTheCherry')" class="link">Choose your equity investment</a>
+        <a href="#!" onclick="gotoSection('bitCherry')" class="link">Take a bite of Cherry</a>
         <a href="#!" onclick="gotoSection('builtBy')" class="link">Built by the brand that India trusts</a>
         <a href="#!" onclick="gotoSection('faq')" class="link">Frequently asked question</a>
       </div>
@@ -741,10 +792,16 @@ Regulatory Links - <a href="#!" target="_blank" rel="noopener noreferrer"> Priva
       </div>
     </div>
   </div>
-  <a href="#!" class="chat show-bg"><img class="lozad" data-src="assets/images/bot.png" alt=""></a>
+  <a href="#!" class="chat show-bg">
+    <img class="lozad di-big" data-src="assets/images/bot.png" alt="">
+    <img class="lozad di-small" data-src="assets/images/bot-small.png" alt="">
+  </a>
+  <a  onclick="event.preventDefault();" class="get-start-fix mutiStepForm_open">Get Started</a>
+
+  
   <script as="script" src="assets/vendors/js/jquery-3.6.0.min.js"></script>
   <script as="script" src="assets/vendors/js/jquery.popupoverlay-min.js"></script>
-  <script  src="assets/vendors/js/jquery-ui.js"></script>
+  <!-- <script  src="assets/vendors/js/jquery-ui.js"></script> -->
   <script rel="prefetch" as="script" src="assets/vendors/js/owl.carousel.min.js"></script>
   <script as="script"  src="assets/vendors/js/lozad.min.js"></script>
   <script src="js/main.js"></script>
@@ -758,7 +815,7 @@ Regulatory Links - <a href="#!" target="_blank" rel="noopener noreferrer"> Priva
       let bannerSection = $("#bannerSection").owlCarousel({
         margin:10,
         items: 1,
-        autoHeight:true,
+        // autoHeight:true,
         autoplay:true,
         loop:true,
       })
@@ -783,7 +840,7 @@ Regulatory Links - <a href="#!" target="_blank" rel="noopener noreferrer"> Priva
       let infoCarousel = $("#ourServices").owlCarousel({
         margin:0,
         items: 1.2,
-        loop:true,
+        // loop:true,
         dots:false,
       })
     }
@@ -811,16 +868,20 @@ Regulatory Links - <a href="#!" target="_blank" rel="noopener noreferrer"> Priva
     }
     if ($('#accCarousel').length) {
       let bannerSection = $("#accCarousel").owlCarousel({
-        margin:20,
         items: 3,
         dots:false,
+        autoplay:true,
+        loop:true,
         responsive: {
           0: {
             items: 1.2,
+            margin:0,
+
             // autoHeight:true,
           },
           992:{
             items: 3,
+            margin:20,
 
           },
         },
@@ -831,17 +892,17 @@ Regulatory Links - <a href="#!" target="_blank" rel="noopener noreferrer"> Priva
     if ($('#ourAwards').length) {
       let bannerSection = $("#ourAwards").owlCarousel({
         margin:20,
-        items: 1.2,
+        items: 2,
         dots:false,
-        loop: true,
+        // loop: true,
         responsive: {
           0: {
-            // items: 1.1,
+            items: 1,
             autoHeight:true,
             margin: 0,
           },
           992:{
-            // items: ,
+            items: 2,
             margin:20,
 
           },

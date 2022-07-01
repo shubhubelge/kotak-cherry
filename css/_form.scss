@@ -6,19 +6,29 @@
     }
   }
   .form-title{
-    padding: 16px 24px;
-    display: inline-block;
+    // padding: 16px 24px;
+    // display: inline-block;
+    // font-size: 24px;
+    // line-height: 34px;
+    // color: #ffffff;
+    // font-weight: 700;
+    // font-family: "Roboto";
+    // border-top-left-radius: 5px;
+    // border-top-right-radius: 5px;
+    // background-image: linear-gradient(-90deg, #002953 0%, #75223a 100%);
     font-size: 24px;
     line-height: 34px;
-    color: #ffffff;
+    color: #000000;
     font-weight: 700;
     font-family: "Roboto";
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    background-image: linear-gradient(-90deg, #002953 0%, #75223a 100%);
+    background-image: linear-gradient(0deg, #ffffff 0%, #eaf4ff 100%);
+    padding: 32px 40px 0 40px;
+    display: block;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   }
   .form-waring{
-    margin: 16px 0;
+    margin: 12px 0 24px 0;
     font-size: 10px;
     color: #272643;
     font-weight: 400;
@@ -29,23 +39,27 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 36px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-shadow: 0 0 25px rgba(0,0,0,0.1);
-    filter: drop-shadow(0 0 25px rgba(0,0,0,0.1));
-    background-color: #ffffff;
+    padding: 0 40px 32px 40px;
+    margin-top: 32px;
+
+    // padding: 36px;
+    // border: 1px solid #ccc;
+    // border-radius: 4px;
+    // box-shadow: 0 0 25px rgba(0,0,0,0.1);
+    // filter: drop-shadow(0 0 25px rgba(0,0,0,0.1));
+    // background-color: #ffffff;
     .col-input{
-      width: 26%;
+      width: 100%;
       margin: 0;
+      margin-bottom: 12px;
     }
     .submit-btn{
-      width: 16%;
+      width: auto;
       margin: 0;
     }
-    .submit-btn{
-      padding: 0;
-    }
+    // .submit-btn{
+    //   padding: 0;
+    // }
   }
   .mobile-number-flex{
     display: flex;
@@ -98,7 +112,8 @@
     font-weight: 400;
     border-radius: 10px;
 
-    background-color: #ffffff;
+    border-radius: 30px;
+    background-color: rgba(249,249,249,0);
     border: 1px solid rgba(0,0,0,0.2);
 
     // font-family: "Poppins";
@@ -227,7 +242,7 @@
   .form {
     .info{
       font-size: 12px;
-      color: #000000;
+      color: #000000dc;
       font-weight: 400;
       font-family: "Roboto";
       margin: 16px 0;
@@ -247,9 +262,9 @@
 }
 
 .submit-btn {
-  display: flex;
-  align-items: center;
-  padding: 14px 0;
+  // display: flex;
+  // align-items: center;
+  padding: 14px;
   border: none;
   display: inline-block;
   cursor: pointer;
@@ -262,6 +277,9 @@
   text-align: center;
   border-radius: 10px;
   background-color: #ea1b21;
+  height: 60px;
+  border-radius: 30px;
+  background-image: linear-gradient(90deg, #1d9fd3 0%, #334cb3 100%);
 }
 // multi step form
 .mutit-step-form{
@@ -294,6 +312,7 @@
     li{
       width: 33.33%;
     }
+  
     .step{
       text-align: center;
       width: 100%;
@@ -302,9 +321,15 @@
       font-weight: 400;
       font-size: 14px;
       white-space: nowrap;
+      &.step-1{
+        border-top-left-radius: 20px;
+      }
+      &.step-3{
+        border-top-right-radius: 20px;
+      }
       &.active{
         background-color: #f9f9f9;
-        color: #ea1b21;
+        color: #1876d3;
       }
     }
   }
@@ -350,7 +375,7 @@
   }
 
   .bootom-container{
-    height: 68px;
+    height: 88px;
     // background-color: #ccc;
     display: flex;
     align-items: center;
@@ -419,6 +444,10 @@
     
     .switch-title{
       margin-left: 12px;
+      font-size: 12px;
+      color: #000000;
+      font-weight: 400;
+      font-family: "Roboto";
     }
   }
   .form-active{
@@ -426,14 +455,14 @@
   }
   
   .ui-datepicker-trigger {
-    // content: "";
     position: absolute;
-    right: 24px;
-    top: 50%;
+    right: 30px;
+    top: 46%;
     transform: translateY(-50%);
-    // background-color: red;
-    // height: 20px;
-    // width: 20px;
+    cursor: pointer;
+    width: 21px;
+    height: auto; 
+    display: block;
   }
   .date-control::after, .date-type::-webkit-calendar-picker-indicator {
     color: rgba(0, 0, 0, 0);
@@ -459,9 +488,9 @@
     text-align: center;
 
     p{
-      font-size: 12px;
+      font-size: 16px;
       color: #000000;
-      font-weight: 400;
+      font-weight: 700;
       font-family: "Roboto";
       margin-bottom: 20px;
     }
@@ -477,23 +506,30 @@
   }
   
 }
+.pass-samp{
+  font-size: 12px;
+  color: #000000;
+  font-weight: 400;
+  font-style: italic;
+  font-family: "Roboto";
+}
 .pass-valid{
   font-size: 12px;
   line-height: 18px;
   color: #000000;
   font-weight: 400;
   font-family: "Roboto";
-  list-style: none;
+  // list-style: none;
   padding-left: 16px;
   margin-top: 24px;
-  li::before {
-    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: #b2b2b2; /* Change the color */
-    font-weight: bold; /* If you want it to be bold */
-    display: inline-block; /* Needed to add space between the bullet and the text */
-    width: 1em; /* Also needed for space (tweak if needed) */
-    margin-left: -1em; /* Also needed for space (tweak if needed) */
-  }
+  // li::before {
+  //   content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  //   color: #000000; /* Change the color */
+  //   font-weight: bold; /* If you want it to be bold */
+  //   display: inline-block; /* Needed to add space between the bullet and the text */
+  //   width: 1.2em; /* Also needed for space (tweak if needed) */
+  //   margin-left: -1em; /* Also needed for space (tweak if needed) */
+  // }
   
 }
 .complete {
@@ -523,7 +559,6 @@
   font-size: 16px;
   color: #fff;
   font-weight: 600;
-  background-color: #ea1b21;
   text-align: center;
   padding: 14px 0;
   outline: none;
@@ -531,6 +566,8 @@
   padding-left: 36px;
   padding-right: 36px;
   border-radius: 8px;
+  border-radius: 25px;
+  background-image: linear-gradient(90deg, #1d9fd3 0%, #334cb3 100%);
   cursor: pointer;
 }
 
@@ -540,7 +577,7 @@
     padding-left: 35px;
     margin-bottom: 12px;
     cursor: pointer;
-    font-size: 11px;
+    font-size: 12px;
     line-height: 16px;
     color: #272643;
     font-weight: 400;
@@ -566,8 +603,9 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 20px;
-    width: 20px;
+    height: 18px;
+    width: 18px;
+    border-radius: 2px;
     background-color: #fff;
     border: 2px solid #000000;
   }
@@ -606,4 +644,8 @@
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
+}
+.form-wrapper .col-input .control .set-position-eye img{
+  display: block;
+  width: 18px;
 }

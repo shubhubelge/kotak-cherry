@@ -32,6 +32,7 @@ for (i = 0; i < acc.length; i++) {
 
 $('#mutiStepForm').popup({
   // closebutton: true,
+  scrolllock: true,
 }).on('hide', function(event) {
   event.preventDefault();
   event.stopPropagation();
@@ -42,25 +43,26 @@ $('#mutiStepForm').popup({
 $('#tAndC').popup({
   closebutton: true,
   background: false,
+  scrolllock: true
 });
 
-$( function() {
-  $( "#datepicker" ).datepicker({
-    dateFormat: "yy-mm-dd",
-    showOn: "both",
-    buttonImageOnly: true,
-    buttonImage: "../assets/images/date-icon.png",
-    buttonText: "Calendar",
-    changeYear: true,
+// $( function() {
+//   $( "#datepicker" ).datepicker({
+//     dateFormat: "yy-mm-dd",
+//     showOn: "both",
+//     buttonImageOnly: true,
+//     buttonImage: "../assets/images/date-icon.png",
+//     buttonText: "Calendar",
+//     changeYear: true,
     
-    // disabled: true
-    // buttonImageOnly: true
-  }).on('hide', function(event) {
-    event.preventDefault();
-    event.stopPropagation();
-  });
+//     // disabled: true
+//     // buttonImageOnly: true
+//   }).on('hide', function(event) {
+//     event.preventDefault();
+//     event.stopPropagation();
+//   });
   
-} );
+// } );
 
 
 function togglePassType(e){
@@ -84,71 +86,90 @@ $('.togglePassType').click(function(){
     siblings.type = "text";
     child.src = "/assets/images/view.png";
   }
-})
+});
 
 $('.date-type').focus(function(){
   // $("span").css("display", "inline").fadeOut(2000);
-  // $('.dataToggele').removeClass('date-control');
+  $('.position-date').toggle();
   this.type='date';
 });
 $('.date-type').blur(function(){
   // $("span").css("display", "inline").fadeOut(2000);
   // $('.dataToggele').addClass('date-control');
+  $('.position-date').toggle();
   this.type='text';
 });
+$('.ui-datepicker-trigger').click(()=>{
+  $("#dateInput").focus()
+})
 
-
-$("#toogleForm").click(function(){
-  $('.button-box').toggle()
+$("#toogleForm").click(function(e){
+  // $('.button-box').toggle()
   $("#formCotainer").toggle()  
+})
+
+// $(window).click((e)=>{
+//   console.log("click")
+//   if (!$(e.target).closest('.form-position').length){
+//     $("#formCotainer").toggle()  
+//   }
+// })
+$("#formCotainer").click((e)=>{
+  if (!$(e.target).closest('.form-position').length){
+    $("#formCotainer").toggle()  
+  }
 })
 
 $(document).ready(function(){
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 500) {
+    if ($(this).scrollTop() > 800) {
       $('.sticky-btn-book-apt').addClass('sticky-block');
+      // $('.get-start-fix').addClass('fix-btn-block');
+
     } else {
       $('.sticky-btn-book-apt').removeClass('sticky-block');
+      // $('.get-start-fix').removeClass('fix-btn-block');
+
     }
   });
-  });
+});
 
   $(".toggle_icon").click(function(){
     $('.mobile-menu').toggleClass('open')
   })
 
-const mySlider = document.getElementById("my-slider");
-const sliderValue = document.getElementById("sipValue");
+// const mySlider = document.getElementById("my-slider");
+// const sliderValue = document.getElementById("sipValue");
 
-function slider(){
-  // console.log(this)
-    valPercent = (mySlider.value / mySlider.max)*100;
-    mySlider.style.background = `linear-gradient(to right, #002954 ${valPercent}%, #ffeded ${valPercent}%)`;
-    sliderValue.textContent = mySlider.value;
-}
-slider();
+// function slider(){
+//   // console.log(this)
+//     valPercent = (mySlider.value / mySlider.max)*100;
+//     mySlider.style.background = `linear-gradient(to right, #002954 ${valPercent}%, #ffeded ${valPercent}%)`;
+//     sliderValue.textContent = mySlider.value;
+// }
+// slider();
 
-const sipPeriod = document.getElementById("sipPeriod");
-const sipPeriodValue = document.getElementById("sipPeriodValue");
+// const sipPeriod = document.getElementById("sipPeriod");
+// const sipPeriodValue = document.getElementById("sipPeriodValue");
 
-function sliderSipPeriod(){
-  // console.log(this)
-    valPercent = (sipPeriod.value / sipPeriod.max)*100;
-    sipPeriod.style.background = `linear-gradient(to right, #002954 ${valPercent}%, #ffeded ${valPercent}%)`;
-    sipPeriodValue.textContent = sipPeriod.value;
-}
-sliderSipPeriod();
+// function sliderSipPeriod(){
+//   // console.log(this)
+//     valPercent = (sipPeriod.value / sipPeriod.max)*100;
+//     sipPeriod.style.background = `linear-gradient(to right, #002954 ${valPercent}%, #ffeded ${valPercent}%)`;
+//     sipPeriodValue.textContent = sipPeriod.value;
+// }
+// sliderSipPeriod();
 
-const retunAmt = document.getElementById("retunAmt");
-const retunAmtValue = document.getElementById("retunAmtValue");
+// const retunAmt = document.getElementById("retunAmt");
+// const retunAmtValue = document.getElementById("retunAmtValue");
 
-function sliderretunAmt(){
-  // console.log(this)
-    valPercent = (retunAmt.value / retunAmt.max)*100;
-    retunAmt.style.background = `linear-gradient(to right, #002954 ${valPercent}%, #ffeded ${valPercent}%)`;
-    retunAmtValue.textContent = retunAmt.value;
-}
-sliderretunAmt();
+// function sliderretunAmt(){
+//   // console.log(this)
+//     valPercent = (retunAmt.value / retunAmt.max)*100;
+//     retunAmt.style.background = `linear-gradient(to right, #002954 ${valPercent}%, #ffeded ${valPercent}%)`;
+//     retunAmtValue.textContent = retunAmt.value;
+// }
+// sliderretunAmt();
 
 // $(".check-box").click(function(){
 //   console.log("dfsd")

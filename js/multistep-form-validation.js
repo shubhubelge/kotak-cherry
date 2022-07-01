@@ -100,8 +100,9 @@ function validation(e){
 
     // }
     if(valid){
+      $('#mutiStepForm').popup('hide');
       $('#thankYou').popup('show');
-      // $('#mutiStepForm').popup('hide');
+
     }
   }
   // console.log(valid)
